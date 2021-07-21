@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* cabecalho */
+.menu {
+    width: 100%;
+    background-color: #000;
+    height: 60px;
+}
+.menu img {
+	margin-top: 10px;
+	margin-left: 20px;
+    width: 10%;
+}
+.menu .pesquisa, .menu button {
+    float: right;
+}
+.btnmenu {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}
+.pesquisa {
+    position: absolute;
+    top: 12px;
+	right: 100px;
+    height: 38px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+
+/*carousel*/
+.mySlider {
+    display:none; 
+    width: 100%; 
+    height: 420px;
+}
+.mySlider img {
+    width: 100%;
+    height: 100%;
+}
+
+/*sub-menu*/
+.sub-menu {
+    width: 100%;
+    background-color: #FFF;
+    height: 60px;
+}
+.sub-menu ul {
+    margin-left: 15%;
+    padding: 15px;
+}
+.sub-menu li {
+    list-style-type: none;    
+    padding-left: 120px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.sub-menu a {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+.sub-menu a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+/*promo*/
+.promo {
+    margin-top: 100px;
+}
+.box {
+    width: 23%;
+    height: 400px;
+    float: left;
+    padding: 10px; 
+    margin-top: 50px;
+}
+.box-selecionado {
+	width: 23%;
+    height: 400px;
+    float: left;
+    position: absolute;
+    top: 100px;
+    left: 500px; 
+}
+.box-selecionado img {
+	width: 100%;
+    height: 100%;
+}
+.box img {
+    width: 100%;
+    height: 100%;
+}
+.roupas {
+    margin-top: 30px;
+}
+
+/*botao comprar*/
+.botao {
+    display: none;
+    visibility: hidden;
+}
+.box:hover .botao {
+    background-color: black;
+    color: white;
+    display: block;
+    visibility: visible;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 80px;
+    top: -250px;
+    text-decoration: none;
+}
+.box:hover a .botao {
+    text-decoration: none;
+}
+
+/*rodape*/
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    clear: both;
+    position: relative;
+    top: 50px;
+}
+footer p {
+    color: #FFF;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+/*formulario de cadastro*/
+.box-selecionado {
+	width: 250px;
+    height: 300px;
+    float: left;
+    position: absolute;
+    top: 100px;
+    left: 50%; 
+}
+.box-selecionado img {
+	width: 100%;
+    height: 100%;
+}
+.formulario .box {
+    float: left;
+}
+.formulario {
+	margin-left: 40px;
+	width: 1000px;
+	height: 640px;
+}
+
+/*tela entre 375px e 667px*/
+@media screen and (min-width: 375px) and (max-width: 667px) {
+	body {
+		margin: 0px;
+		padding: 0px;
+	}
+    .menu img {
+        margin-top: 5px;
+        width: 5%;
+    }
+	.btnmenu {
+        position: absolute;
+		right: 10px;
+		top: 10px;
+        height: 35px;
+	}
+	.pesquisa {
+        position: relative;
+		right: 100px;
+        width: 120px;
+        height: 30px;
+	}
+	.menu img {
+        width: 25%;
+    }
+    .menu ul {
+        display: block;
+    }
+    .mySlider {
+        height: 180px;
+    }
+    .container {
+        width: 300px;
+    }
+    .box {
+        position: relative;
+        width: 300px;
+        height: 350px;
+        left: 5px;
+        padding: 5px;
+        padding-top: 5px;
+    }   
+    .sub-menu {
+        width: 50%;
+        background-color: #FFF;
+        height: 60px;
+    }
+    .sub-menu {                 
+        height: 50%;      
+        padding-left: 5%;
+    }
+    .sub-menu li {    
+        display: block;
+    }
+    .box-selecionado {
+	width: 250px;
+    height: 300px;
+    float: left;
+    position: absolute;
+    top: 750px;
+    left: 100px;
+	}
+	.box-selecionado img {
+		width: 100%;
+	    height: 100%;
+	}
+	.formulario {
+		width: 300px;
+		height: 1000px;
+		margin-left: 15%;
+	}
+}
+
+/*tela entre 670px e 1200px*/
+@media screen and (min-width: 670px) and (max-width: 1200px) {
+    .menu img {
+        width: 20%;
+    }
+	.btnmenu {
+		right: 10px;
+	}
+	.pesquisa {
+		right: 100px;
+	}
+    .mySlider {
+        height: 200px;
+    }
+	.mySlider {
+		height: 300px;
+	}
+    .container {
+        width: 700px;
+    }
+    .box {
+        position: relative;
+        width: 300px;
+        height: 350px;
+        padding: 15px;
+        left: 20px;
+        padding-top: 5px;
+    }    
+    .sub-menu {                 
+        height: 50%;             
+    }
+    
+
+}
